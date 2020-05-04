@@ -2,7 +2,7 @@
 
 + ####  Assignment_1
 
-  > [1 Week]([https://github.com/narinn-star/C_sharp_Assignment/tree/master/1%20Week)
+  > [1 Week](https://github.com/narinn-star/C_sharp_Assignment/tree/master/1%20Week)
 
   > [2 Week](https://github.com/narinn-star/C_sharp_Assignment/tree/master/2%20Week)
 
