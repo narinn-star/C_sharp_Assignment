@@ -1,0 +1,10 @@
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\bin\Debug\20203179이나린3번.exe.config
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\bin\Debug\20203179이나린3번.exe
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\bin\Debug\20203179이나린3번.pdb
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\obj\Debug\20203179이나린3번.csprojAssemblyReference.cache
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\obj\Debug\_20203179이나린3번.Form1.resources
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\obj\Debug\_20203179이나린3번.Properties.Resources.resources
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\obj\Debug\20203179이나린3번.csproj.GenerateResource.cache
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\obj\Debug\20203179이나린3번.csproj.CoreCompileInputs.cache
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\obj\Debug\20203179이나린3번.exe
+C:\Users\이나린\Desktop\C#중간고사\20203179이나린3번\obj\Debug\20203179이나린3번.pdb
