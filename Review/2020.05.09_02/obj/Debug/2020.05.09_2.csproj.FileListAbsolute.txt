@@ -1,0 +1,10 @@
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\bin\Debug\2020.05.09_2.exe.config
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\bin\Debug\2020.05.09_2.exe
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\bin\Debug\2020.05.09_2.pdb
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\obj\Debug\2020.05.09_2.csprojAssemblyReference.cache
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\obj\Debug\_2020._05._09_2.Form1.resources
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\obj\Debug\_2020._05._09_2.Properties.Resources.resources
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\obj\Debug\2020.05.09_2.csproj.GenerateResource.cache
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\obj\Debug\2020.05.09_2.csproj.CoreCompileInputs.cache
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\obj\Debug\2020.05.09_2.exe
+C:\Users\이나린\Desktop\2020.05.09\2020.05.09\2020.05.09_2\obj\Debug\2020.05.09_2.pdb
