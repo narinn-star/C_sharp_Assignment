@@ -38,6 +38,14 @@
 
   > [5 Week](https://github.com/narinn-star/C_sharp_Assignment/tree/master/5%20Week)
 
+  ​	
+
++ #### Assignment_7
+
+  ###### 2020.05.15
+
+  > [7 Week](https://github.com/narinn-star/C_sharp_Assignment/tree/master/7%20Week)
+
   
 
 + #### C# Midterm Examination
@@ -53,5 +61,3 @@
 + #### REVIEW
 
   > [Review](https://github.com/narinn-star/C_sharp_Assignment/tree/master/Review)
-
-  
