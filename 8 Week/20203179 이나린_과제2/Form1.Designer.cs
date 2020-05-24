@@ -236,7 +236,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "3장 혼자해보기 3";
+            this.Text = "3장 혼자해보기 3번";
             this.ResumeLayout(false);
             this.PerformLayout();
 

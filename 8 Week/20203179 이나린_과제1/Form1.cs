@@ -41,7 +41,7 @@ namespace _20203179_이나린_과제1
                     uint sum01 = 0;
                     double sum02 = 1;
 
-                    for (uint i = 1; i <= max; i = i + plus)
+                    for (uint i = 1; i <= max; i += plus)
                     {
                         sum01 = sum01 + i;
                         sum02 = sum02 * i;
