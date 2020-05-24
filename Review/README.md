@@ -9,3 +9,7 @@
 > 1st ☞ switch/case
 >
 > 2nd ☞ switch/case 
+
+#### 2020.05.24
+
+> 1st ☞ for 문
