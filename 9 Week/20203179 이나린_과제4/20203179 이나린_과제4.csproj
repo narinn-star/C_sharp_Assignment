@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6DED2502-B6ED-42B5-9C92-E6781BEC63B6}</ProjectGuid>
+    <ProjectGuid>{02C5D052-54DA-4595-951A-E9E2F0F1C90B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_20203179_이나린_과제1</RootNamespace>
-    <AssemblyName>20203179 이나린_과제1</AssemblyName>
+    <RootNamespace>_20203179_이나린_과제4</RootNamespace>
+    <AssemblyName>20203179 이나린_과제4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
