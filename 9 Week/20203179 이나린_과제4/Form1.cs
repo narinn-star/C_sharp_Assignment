@@ -12,7 +12,7 @@ namespace _20203179_이나린_과제4
 {
     public partial class Form1 : Form
     {
-        string step = "";
+        string step = "0";
         double result = 0;
         int count = 0;
 
@@ -92,8 +92,9 @@ namespace _20203179_이나린_과제4
             try
             {
                 double num01 = double.Parse(textBox1.Text);
-                
-                label1.Text = "수행단계: 0 + " + num01;
+
+                step += " + " + num01;
+                label1.Text = "수행단계: " + step;
                 
                 result += num01;
                 label2.Text = "계산결과 : " + result;
@@ -116,7 +117,8 @@ namespace _20203179_이나린_과제4
             {
                 double num02 = double.Parse(textBox1.Text);
 
-                label1.Text = "수행단계: 0 - " + num02;
+                step += " - " + num02;
+                label1.Text = "수행단계: " + step;
 
                 result -= num02;
                 label2.Text = "계산결과 : " + result;
@@ -139,7 +141,8 @@ namespace _20203179_이나린_과제4
             {
                 double num03 = double.Parse(textBox1.Text);
 
-                label1.Text = "수행단계: 0 * " + num03;
+                step += " * " + num03;
+                label1.Text = "수행단계: " + step;
 
                 result = result * num03;
                 label2.Text = "계산결과 : " + result;
@@ -162,21 +165,21 @@ namespace _20203179_이나린_과제4
             {
                 double num04 = double.Parse(textBox1.Text);
 
-                label1.Text = "수행단계: 0 / " + num04;
-
-                count += 1;
-                label3.Text = "계산 수행 횟수 " + count.ToString();
-
-                textBox1.Text = "";
-                textBox1.Focus();
-
                 if (textBox1.Text != "0")
                 {
                     result = result / num04;
                     label2.Text = "계산결과 : " + result;
+
+                    step += " / " + num04;
+                    label1.Text = "수행단계: " + step;
+
+                    count += 1;
+                    label3.Text = "계산 수행 횟수 " + count.ToString();
+
+                    textBox1.Text = "";
+                    textBox1.Focus();
                 }
-                
-                
+                              
             }
             catch (Exception ee)
             {
