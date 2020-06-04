@@ -1,0 +1,10 @@
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\bin\Debug\20203179 이나린_과제1.exe.config
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\bin\Debug\20203179 이나린_과제1.exe
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\bin\Debug\20203179 이나린_과제1.pdb
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\obj\Debug\20203179 이나린_과제1.csprojAssemblyReference.cache
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\obj\Debug\_20203179_이나린_과제1.Form1.resources
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\obj\Debug\_20203179_이나린_과제1.Properties.Resources.resources
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\obj\Debug\20203179 이나린_과제1.csproj.GenerateResource.cache
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\obj\Debug\20203179 이나린_과제1.csproj.CoreCompileInputs.cache
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\obj\Debug\20203179 이나린_과제1.exe
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\10 Week\20203179 이나린_과제1\obj\Debug\20203179 이나린_과제1.pdb
