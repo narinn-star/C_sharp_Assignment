@@ -19,21 +19,21 @@ namespace _20203179_이나린_과제1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int[] Array = new int[100];
-            label2.Text = "";
-            for (int i = 0; i < Array.Length; i++)
-            { Array[i] =i+1; }
+            System.Random random = new System.Random();
+            int who = random.Next(1, 5);
+            int what = random.Next(1, 4);
 
-            foreach (int output in Array)
-            {
-                if (output % 10 == 0)
-                {
-                    label2.Text += output.ToString() + " ";
-                    label2.Text += "\n";
-                }
-                else
-                    label2.Text += output.ToString() + " ";
-            }
+            string result = "";
+            if (who == 1) result += "쏠사람 : 김태휘, ";
+            else if (who == 2) result += "쏠사람 : 한가언, ";
+            else if (who == 3) result += "쏠사람 : 설유리, ";
+            else result += "쏠사람 : 한예술, ";
+
+            if (what == 1) result += "쏠 메뉴 : 짜장면";
+            else if (what == 2) result += "쏠 메뉴 : 간짜장";
+            else result += "쏠 메뉴 : 짜장라면";
+
+            label3.Text = result;
         }
     }
 }

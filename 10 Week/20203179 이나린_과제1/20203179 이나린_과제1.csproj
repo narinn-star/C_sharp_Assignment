@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{62BAF511-7E20-45CD-8795-EE18B25F2791}</ProjectGuid>
+    <ProjectGuid>{4D8454D0-80C4-4941-8835-89D365363731}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>_20203179_이나린_과제1</RootNamespace>
     <AssemblyName>20203179 이나린_과제1</AssemblyName>

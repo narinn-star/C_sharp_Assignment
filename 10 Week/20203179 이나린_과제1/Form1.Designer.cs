@@ -29,50 +29,63 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(28, 9);
+            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(27, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(290, 122);
+            this.label1.Size = new System.Drawing.Size(285, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "\r\n     100개짜리 배열을 만들고\r\n     반복문 for를 사용하여 각 원소에\r\n     1 부터 100 까지의 정수를 넣은 후\r\n\r\n  " +
-    "   foreach 반복문을 사용하여 한 줄에\r\n     10개씩의 숫자를 출력하는 프로그램   \r\n\r\n";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(28, 161);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 36);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "출 력";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.Text = "멤버 : 김태휘, 한가언, 설유리, 한예술";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 223);
+            this.label2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(27, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "결과가 표시되는 곳입니다!";
+            this.label2.Size = new System.Drawing.Size(241, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "메뉴 : 짜장면, 간짜장, 짜장라면\r\n";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(157, 161);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 36);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "사다리타기";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(27, 248);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(179, 15);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "결과가 나오는 곳입니다";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 450);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(478, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "과제1_배열출력하기";
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,8 +94,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
     }
 }
 
