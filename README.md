@@ -66,7 +66,7 @@
 
 + #### Assignment_10
 
-  ###### 2020.06.04
+  ###### 2020.06.05
 
   > [10 Week](https://github.com/narinn-star/C_sharp_Assignment/tree/master/10%20Week)
 
