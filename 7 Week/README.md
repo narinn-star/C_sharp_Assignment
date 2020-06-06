@@ -68,7 +68,7 @@ if (double.Parse(textBox.Text) >= 0){
 
 **☞ 4th. for 반복문 + Operator %**
 
-17 ~ 100 를 17로 나누어 떨어지는 수 출력
+17부터 100까지의 수를 17로 나누어 떨어지는 수 출력
 
 for (int i = 17; i <= 100; i++){
 
