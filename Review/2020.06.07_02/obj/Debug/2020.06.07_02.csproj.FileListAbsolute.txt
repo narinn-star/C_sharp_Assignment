@@ -1,0 +1,9 @@
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\Review\2020.06.07_02\bin\Debug\2020.06.07_02.exe.config
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\Review\2020.06.07_02\bin\Debug\2020.06.07_02.exe
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\Review\2020.06.07_02\bin\Debug\2020.06.07_02.pdb
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\Review\2020.06.07_02\obj\Debug\_2020._06._07_02.Form1.resources
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\Review\2020.06.07_02\obj\Debug\_2020._06._07_02.Properties.Resources.resources
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\Review\2020.06.07_02\obj\Debug\2020.06.07_02.csproj.GenerateResource.cache
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\Review\2020.06.07_02\obj\Debug\2020.06.07_02.csproj.CoreCompileInputs.cache
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\Review\2020.06.07_02\obj\Debug\2020.06.07_02.exe
+C:\Users\이나린\Desktop\IJU\2020 1학기\과제\C#\C_sharp_Assignment\Review\2020.06.07_02\obj\Debug\2020.06.07_02.pdb
