@@ -28,16 +28,16 @@ namespace _20203179_이나린_과제4
             sUnacceptableWords[2] = "님아";
             sUnacceptableWords[3] = "8억";
             string contents = textBox1.Text;
-            
-            foreach (string word in sUnacceptableWords)
+            //abcdc 바보 멍청이
+            foreach (string word in sUnacceptableWords) 
             {
                 string First = "";
                 string Second = "";
                 int Position = contents.IndexOf(word);
-                while (Position >= 0)
+                while (Position != -1)
                 {
                     First = contents.Substring(0, Position);
-                    Second = contents.Substring(Position + contents.Length);
+                    Second = contents.Substring(Position + word.Length);
 
                     contents = First + "금지어" + Second;
                     Position = contents.IndexOf(word);
