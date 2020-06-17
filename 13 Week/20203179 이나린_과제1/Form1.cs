@@ -56,95 +56,120 @@ namespace _20203179_이나린_과제1
 
         private void 열기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Modified == true)
+            try
             {
-                DialogResult answer = MessageBox.Show("변경된 내용을 저장하시겠습니까?", "저장", MessageBoxButtons.YesNo);
-                if (answer == DialogResult.Yes)
+                if (Modified == true)
                 {
-                    if (file_name == true)
+                    DialogResult answer = MessageBox.Show("변경된 내용을 저장하시겠습니까?", "저장", MessageBoxButtons.YesNo);
+                    if (answer == DialogResult.Yes)
                     {
-                        System.IO.StreamWriter fs = System.IO.File.CreateText(name);
-                        fs.WriteLine(textBox1.Text);
-                        fs.Close();
-                        Modified = false;
-                    }
-                    else
-                    {
-                        if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                        if (file_name == true)
                         {
-                            name = saveFileDialog1.FileName;
                             System.IO.StreamWriter fs = System.IO.File.CreateText(name);
                             fs.WriteLine(textBox1.Text);
                             fs.Close();
-                            file_name = true;
                             Modified = false;
+                        }
+                        else
+                        {
+                            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                            {
+                                name = saveFileDialog1.FileName;
+                                System.IO.StreamWriter fs = System.IO.File.CreateText(name);
+                                fs.WriteLine(textBox1.Text);
+                                fs.Close();
+                                file_name = true;
+                                Modified = false;
+                            }
                         }
                     }
                 }
-            }
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                name = openFileDialog1.FileName;
-                System.IO.StreamReader fs = System.IO.File.OpenText(name);
-                textBox1.Text = fs.ReadToEnd();
-                fs.Close();
-                file_name = true;
-                Modified = false;
-            }
-        }
-
-        private void 저장ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (file_name == true)
-            {
-                System.IO.StreamWriter fs = System.IO.File.CreateText(name);
-                fs.WriteLine(textBox1.Text);
-                fs.Close();
-                Modified = false;
-            }
-            else
-            {
-                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    name = saveFileDialog1.FileName;
-                    System.IO.StreamWriter fs = System.IO.File.CreateText(name);
-                    fs.WriteLine(textBox1.Text);
+                    name = openFileDialog1.FileName;
+                    System.IO.StreamReader fs = System.IO.File.OpenText(name);
+                    textBox1.Text = fs.ReadToEnd();
                     fs.Close();
                     file_name = true;
                     Modified = false;
                 }
             }
+            catch
+            {
+                MessageBox.Show("열기를 하는 도중 이상이 발생했습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+        }
+
+        private void 저장ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (file_name == true)
+                {
+                    System.IO.StreamWriter fs = System.IO.File.CreateText(name);
+                    fs.WriteLine(textBox1.Text);
+                    fs.Close();
+                    Modified = false;
+                }
+                else
+                {
+                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    {
+                        name = saveFileDialog1.FileName;
+                        System.IO.StreamWriter fs = System.IO.File.CreateText(name);
+                        fs.WriteLine(textBox1.Text);
+                        fs.Close();
+                        file_name = true;
+                        Modified = false;
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("저장을 하는 도중 이상이 발생했습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
         }
 
         private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Modified == true)
+            try
             {
-                DialogResult answer = MessageBox.Show("변경된 내용을 저장하시겠습니까?", "저장", MessageBoxButtons.YesNo);
-                if (answer == DialogResult.Yes)
+                if (Modified == true)
                 {
-                    if (file_name == true)
+                    DialogResult answer = MessageBox.Show("변경된 내용을 저장하시겠습니까?", "저장", MessageBoxButtons.YesNo);
+                    if (answer == DialogResult.Yes)
                     {
-                        System.IO.StreamWriter fs = System.IO.File.CreateText(name);
-                        fs.WriteLine(textBox1.Text);
-                        fs.Close();
-                        Modified = false;
-                    }
-                    else
-                    {
-                        if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                        if (file_name == true)
                         {
-                            name = saveFileDialog1.FileName;
                             System.IO.StreamWriter fs = System.IO.File.CreateText(name);
                             fs.WriteLine(textBox1.Text);
                             fs.Close();
-                            file_name = true;
                             Modified = false;
+                        }
+                        else
+                        {
+                            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                            {
+                                name = saveFileDialog1.FileName;
+                                System.IO.StreamWriter fs = System.IO.File.CreateText(name);
+                                fs.WriteLine(textBox1.Text);
+                                fs.Close();
+                                file_name = true;
+                                Modified = false;
+                            }
                         }
                     }
                 }
+                Application.Exit();
             }
-            Application.Exit();
+            catch
+            {
+                MessageBox.Show("끝내기를 하는 도중 이상이 발생했습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

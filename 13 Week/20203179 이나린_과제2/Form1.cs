@@ -46,7 +46,6 @@ namespace _20203179_이나린_과제2
                             file_name = true;
                             Modified = false;
                         }
-                        
                     }
                 }
             }
@@ -92,7 +91,6 @@ namespace _20203179_이나린_과제2
                 fs.Close();
                 Modified = false;
                 file_name = true;
-
             }
         }
 
@@ -128,7 +126,7 @@ namespace _20203179_이나린_과제2
 
         private void 복사CCtrlCToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            textBox1.Copy();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -162,7 +160,69 @@ namespace _20203179_이나린_과제2
                             file_name = true;
                         }
                     }
+                }
+            }
+            Application.Exit();
+        }
 
+        private void 잘라내기TCtrlTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Cut();
+        }
+
+        private void 붙여넣기PCtrlPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Paste();
+        }
+
+        private void 삭제DCtrlDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Paste("");
+        }
+
+        private void 모두선택ACtrlAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.SelectAll();
+        }
+
+        private void 글꼴FCtrlFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+                textBox1.Font = fontDialog1.Font;
+        }
+
+        private void 색깔CCtrlShiftCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+                textBox1.ForeColor = colorDialog1.Color;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Modified == true)
+            {
+                DialogResult answer = MessageBox.Show("변경된 내용을 저장하고 종료 하겠습니까?", "메모장", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                if (answer == DialogResult.Yes)
+                {
+                    if (file_name == true)
+                    {
+                        StreamWriter fs = new StreamWriter(name, false, Encoding.Default);
+                        fs.WriteLine(textBox1.Text);
+                        fs.Close();
+                        Modified = false;
+                    }
+                    else
+                    {
+                        if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                        {
+                            name = saveFileDialog1.FileName;
+                            StreamWriter fs = new StreamWriter(name, false, Encoding.Default);
+                            fs.WriteLine(textBox1.Text);
+                            fs.Close();
+                            Modified = false;
+                            file_name = true;
+                        }
+                    }
                 }
             }
             Application.Exit();

@@ -43,16 +43,18 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.모두선택ACtrlAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.서식JToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.도움말HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.글꼴FCtrlFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.색깔CCtrlShiftCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.도움말HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oNOCtrlShiftOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.oFFFCtrlShiftFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,6 +135,7 @@
             this.잘라내기TCtrlTToolStripMenuItem.Name = "잘라내기TCtrlTToolStripMenuItem";
             this.잘라내기TCtrlTToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.잘라내기TCtrlTToolStripMenuItem.Text = "잘라내기 (T)      Ctrl+T";
+            this.잘라내기TCtrlTToolStripMenuItem.Click += new System.EventHandler(this.잘라내기TCtrlTToolStripMenuItem_Click);
             // 
             // 복사CCtrlCToolStripMenuItem
             // 
@@ -146,12 +149,14 @@
             this.붙여넣기PCtrlPToolStripMenuItem.Name = "붙여넣기PCtrlPToolStripMenuItem";
             this.붙여넣기PCtrlPToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.붙여넣기PCtrlPToolStripMenuItem.Text = "붙여넣기 (P)      Ctrl+P";
+            this.붙여넣기PCtrlPToolStripMenuItem.Click += new System.EventHandler(this.붙여넣기PCtrlPToolStripMenuItem_Click);
             // 
             // 삭제DCtrlDToolStripMenuItem
             // 
             this.삭제DCtrlDToolStripMenuItem.Name = "삭제DCtrlDToolStripMenuItem";
             this.삭제DCtrlDToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.삭제DCtrlDToolStripMenuItem.Text = "삭제 (D)           Ctrl+D";
+            this.삭제DCtrlDToolStripMenuItem.Click += new System.EventHandler(this.삭제DCtrlDToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -163,6 +168,7 @@
             this.모두선택ACtrlAToolStripMenuItem.Name = "모두선택ACtrlAToolStripMenuItem";
             this.모두선택ACtrlAToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.모두선택ACtrlAToolStripMenuItem.Text = "모두선택 (A)     Ctrl+A";
+            this.모두선택ACtrlAToolStripMenuItem.Click += new System.EventHandler(this.모두선택ACtrlAToolStripMenuItem_Click);
             // 
             // 서식JToolStripMenuItem
             // 
@@ -174,21 +180,12 @@
             this.서식JToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.서식JToolStripMenuItem.Text = "서식(J)";
             // 
-            // 도움말HToolStripMenuItem
-            // 
-            this.도움말HToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.oNOCtrlShiftOToolStripMenuItem,
-            this.toolStripMenuItem4,
-            this.oFFFCtrlShiftFToolStripMenuItem});
-            this.도움말HToolStripMenuItem.Name = "도움말HToolStripMenuItem";
-            this.도움말HToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
-            this.도움말HToolStripMenuItem.Text = "도움말(H)";
-            // 
             // 글꼴FCtrlFToolStripMenuItem
             // 
             this.글꼴FCtrlFToolStripMenuItem.Name = "글꼴FCtrlFToolStripMenuItem";
             this.글꼴FCtrlFToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.글꼴FCtrlFToolStripMenuItem.Text = "글꼴(F)            Ctrl+F";
+            this.글꼴FCtrlFToolStripMenuItem.Click += new System.EventHandler(this.글꼴FCtrlFToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -200,6 +197,17 @@
             this.색깔CCtrlShiftCToolStripMenuItem.Name = "색깔CCtrlShiftCToolStripMenuItem";
             this.색깔CCtrlShiftCToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.색깔CCtrlShiftCToolStripMenuItem.Text = "색깔(C)  Ctrl+Shift+C";
+            this.색깔CCtrlShiftCToolStripMenuItem.Click += new System.EventHandler(this.색깔CCtrlShiftCToolStripMenuItem_Click);
+            // 
+            // 도움말HToolStripMenuItem
+            // 
+            this.도움말HToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.oNOCtrlShiftOToolStripMenuItem,
+            this.toolStripMenuItem4,
+            this.oFFFCtrlShiftFToolStripMenuItem});
+            this.도움말HToolStripMenuItem.Name = "도움말HToolStripMenuItem";
+            this.도움말HToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.도움말HToolStripMenuItem.Text = "도움말(H)";
             // 
             // oNOCtrlShiftOToolStripMenuItem
             // 
@@ -233,6 +241,7 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "텍스트 파일 (*.txt)|*.txt|모든 파일 (*.*)|*.*";
             // 
             // Form1
             // 
@@ -244,6 +253,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "메모장";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -278,6 +288,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }
 
