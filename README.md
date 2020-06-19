@@ -88,6 +88,22 @@
 
   
 
++ #### Assignment_13
+
+  ###### 2020.06.17
+
+  > [13 Week](https://github.com/narinn-star/C_sharp_Assignment/tree/master/13%20Week)
+
+  
+
++ #### Assignment_14
+
+  ###### 2020.06.19
+
+  > [14 Week](https://github.com/narinn-star/C_sharp_Assignment/tree/master/14%20Week)
+
+  
+
 + #### C# Midterm Examination
 
   ###### 2020.05.06
@@ -96,7 +112,7 @@
 
   + ##### 2020.05.06 Web Programming
 
-    
+  
 
 + #### REVIEW
 
